@@ -1,0 +1,60 @@
+$orange: #f67031;
+$yellow: #ffa400;
+$red: #ed0036;
+
+$family-sans-serif: "Nunito Sans", sans-serif;
+
+$weight-medium: 600;
+$weight-semibold: 700;
+$weight-bold: 800;
+
+$primary: $red;
+
+@import "bulma/bulma";
+
+.navbar-brand {
+  flex-grow: 1;
+}
+
+a.has-text-primary:focus {
+  color: $primary !important;
+}
+
+.navbar {
+  border-bottom: 1px solid $light;
+
+  .end {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    .navbar-item.with-button {
+      padding-left: 0;
+      &:last-child {
+        @include widescreen {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.field.is-horizontal:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+code {
+  color: $text;
+}
+
+.field-body {
+  border-radius: 5px;
+  background-color: $light;
+}
+
+.modal-card {
+  margin: 0;
+}
+
+.modal {
+  padding: 20px;
+}
